@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/grids/simple-grid.min.css" />
+    <title>Projeto Conclusão de Módulo - CSS</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="row">
+        <div class="col-3-sm">
+          <div class="logo">
+            <img class="logo_escrita" src="assets/imagens/logo_completa.png" />
+            <img class="logo_figura" src="assets/imagens/ícone_logo.png" />
+          </div>
+        </div>
+        <div class="col-6-sm">
+          <div class="pesquisa">
+            <input class="pesquisa_input" placeholder="Buscar..." />
+            <button class="pesquisa_botao">
+              <img src="assets/imagens/ícone_lupa.png" />
+            </button>
+          </div>
+        </div>
+        <div class="col-3-sm">
+          <div class="icones">
+            <button class="botao_icones">
+              <img
+                class="icone_mensagem"
+                src="assets/imagens/ícone_mensagens.png"
+              />
+            </button>
+            <button class="botao_icones">
+              <img
+                class="icone_configuracao"
+                src="assets/imagens/ícone_configurações.png"
+              />
+            </button>
+            <button class="botao_icones">
+              <div class="atencao_notificacao"></div>
+              <img
+                class="icone_notificacao"
+                src="assets/imagens/ícone_sino_notificações.png"
+              />
+            </button>
+            <button class="botao_icones">
+              <img
+                class="foto_perfil_pequena"
+                src="assets/imagens/foto_perfil.png"
+              />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="row">
+      <section class="col-4">
+        <div class="card_perfil">
+          <img
+            class="imagem_conteudo_principal"
+            src="assets/imagens/Foto_painel_perfil.png"
+          />
+          <h4 class="conteudo_principal_nome_perfil">Etta James</h4>
+          <h3 class="conteudo_principal_profissao">
+            Cantora de blues, R&B, jazz e música gospel
+          </h3>
+          <p class="conteudo_principal_subtitulo">
+            22ª posição entre os maiores cantores de todos os tempos, pela
+            revista Rolling Stone, sendo a 3ª mulher mais bem colocada.
+          </p>
+          <div class="conteudo_principal_quantidade_seguidores_post">
+            <div class="quantidade_seguidores">
+              <span>324M</span>
+              <h5 class="seguidores">Seguidores</h5>
+            </div>
+            <div class="quantidade_posts">
+              <span>325K</span>
+              <h5 class="posts">Posts</h5>
+            </div>
+          </div>
+          <ul class="lista_de_acesso">
+            <li class="feeds ativo">
+              <img
+                class="lista_de_icones"
+                src="assets/imagens/ícone_feeds.png"
+              />
+              Feed
+            </li>
+            <li class="feeds">
+              <img
+                class="lista_de_icones"
+                src="assets/imagens/ícone_conexões.png"
+              />
+              Conexão
+            </li>
+            <li class="feeds">
+              <img
+                class="lista_de_icones"
+                src="assets/imagens/ícone_últimas_notícias.png"
+              />
+              Últimas notícias
+            </li>
+            <li class="feeds">
+              <img
+                class="lista_de_icones"
+                src="assets/imagens/ícone_eventos.png"
+              />
+              Eventos
+            </li>
+            <li class="feeds">
+              <img
+                class="lista_de_icones"
+                src="assets/imagens/ícone_configurações.png"
+              />
+              Configurações
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="col-5">
+        <div class="scroll">
+          <div class="galeria_story">
+            <div class="card">
+              <button class="card_botao">
+                <img
+                  class="card_img"
+                  src="assets/imagens/ícone_adicionar_story.png"
+                />
+              </button>
+              <label class="texto_botao">Novo Story</label>
+            </div>
+            <img class="card_img" src="assets/imagens/foto_lua.png" />
+            <img class="card_img" src="assets/imagens/foto_notebook.png" />
+            <img class="card_img" src="assets/imagens/foto_tiro_ao_alvo.png" />
+            <img class="card_img" src="assets/imagens/foto_aviao_mach1.png" />
+          </div>
+        </div>
+        <div class="box1">
+          <div class="area_postagem">
+            <div class="textarea_postagem">
+              <img class="textarea_img" src="assets/imagens/foto_perfil.png" />
+              <textarea class="textarea" placeholder="Placeholder do textarea">
+            Placeholder do textarea...</textarea
+              >
+            </div>
+            <div class="botoes_postagem">
+              <span class="box_incluir">Incluir</span>
+              <button class="botao_box_postagem">Foto</button>
+              <button class="botao_box_postagem">Vídeo</button>
+              <button class="botao_box_postagem">Evento</button>
+            </div>
+          </div>
+          <button class="botao_postar">Postar</button>
+        </div>
+        <div class="box2">
+          <div class="perfil_site">
+            <img
+              class="foto_comentario"
+              src="assets/imagens/foto_comentario_1.png"
+            />
+
+            <span class="nome_perfil"
+              >Nina Simone <span class="tempo_visualizacao">- Há 4 horas</span
+              ><br />
+              <span class="profissao_perfil">Cantora e compositora</span></span
+            >
+          </div>
+          <div class="mensagem">
+            <p class="mensagem_perfil">
+              Zoe Saldana se transforma em Nina Simone no primeiro cartaz da
+              biografia sobre a cantora. Além de estrelar franquias blockbusters
+              como Guardiões da Galáxia 2 e Star Trek: Sem Fronteiras, Zoe
+              Saldana terá uma complicada missão pela frente: interpretar a
+              lendária cantora Nina Simone.
+              <a class="saiba_mais" href="/CSS/">Saiba mais...</a>
+            </p>
+          </div>
+          <div class="botao">
+            <button class="botao_box_postagem">Gostei</button>
+            <button class="botao_box_compartilhar">Compartilhar</button>
+            <h5 class="comentario">30 comentários</h5>
+          </div>
+          <div class="textarea_comentario">
+            <img class="textarea_img" src="assets/imagens/foto_perfil.png" />
+            <textarea class="textarea2" placeholder="Placeholder do textarea">
+Comente sobre isso...</textarea
+            >
+          </div>
+        </div>
+
+        <div class="box3">
+          <div class="perfil_site">
+            <img src="assets/imagens/foto_comentario_2.png" />
+            <span class="nome_perfil"
+              >Frank Sinatra <span class="tempo_visualizacao">- Há 6 horas</span
+              ><br /><span class="profissao_perfil">Cantor e ator</span></span
+            >
+          </div>
+          <div class="mensagem">
+            <p class="mensagem_perfil">
+              New York, minha inspiração para canções...
+            </p>
+          </div>
+          <img class="foto_estatua" src="assets/imagens/foto_estátua.png" />
+          <div class="botao">
+            <button class="botao_box">Gostei</button>
+            <button class="botao_box_compartilhar">Compartilhar</button>
+            <h5 class="comentario">425 comentários</h5>
+          </div>
+          <div class="textarea_comentario">
+            <img class="textarea_img" src="assets/imagens/foto_perfil.png" />
+            <textarea class="textarea2" placeholder="Placeholder do textarea">
+Comente sobre isso...</textarea
+            >
+          </div>
+        </div>
+      </section>
+      <section class="col-3">
+        <div class="box4">
+          <span class="sugestoes_amizade">Parecidos com você</span>
+          <div class="adicinar_contato">
+            <div class="sugestao_conteudo">
+              <img
+                class="foto_perfil_sugestao_amizade"
+                src="assets/imagens/foto_comentario_1.png"
+              />
+              <div>
+                <span class="sugestoes_amizade_amigo">Nina Simone</span>
+                <p class="sugestoes_amizade_amigo_profissao">
+                  Cantora e compositora
+                </p>
+              </div>
+            </div>
+            <img
+              class="botao_adicionar_contato"
+              src="assets/imagens/ícone_adicionar_contato.png"
+            />
+          </div>
+
+          <div class="adicinar_contato">
+            <div class="sugestao_conteudo">
+              <img
+                class="foto_perfil_sugestao_amizade"
+                src="assets/imagens/foto_comentario_2.png"
+              />
+              <div>
+                <span class="sugestoes_amizade_amigo">Frank Sinatra</span>
+                <p class="sugestoes_amizade_amigo_profissao">Cantor e ator</p>
+              </div>
+            </div>
+            <img
+              class="botao_adicionar_contato"
+              src="assets/imagens/ícone_adicionar_contato.png"
+            />
+          </div>
+
+          <div class="adicinar_contato">
+            <div class="sugestao_conteudo">
+              <img
+                class="foto_perfil_sugestao_amizade"
+                src="assets/imagens/foto_comentario_3.png"
+              />
+              <div>
+                <span class="sugestoes_amizade_amigo">Ella Fitzgerald</span>
+                <p class="sugestoes_amizade_amigo_profissao">
+                  Cantora e compositora
+                </p>
+              </div>
+            </div>
+            <img
+              class="botao_adicionar_contato"
+              src="assets/imagens/ícone_adicionar_contato.png"
+            />
+          </div>
+          <div class="adicinar_contato">
+            <div class="sugestao_conteudo">
+              <img
+                class="foto_perfil_sugestao_amizade"
+                src="assets/imagens/foto_comentario_4.png"
+              />
+              <div>
+                <span class="sugestoes_amizade_amigo">Louis Armstrong</span>
+                <p class="sugestoes_amizade_amigo_profissao">
+                  Músico e vocalista
+                </p>
+              </div>
+            </div>
+            <img
+              class="botao_adicionar_contato"
+              src="assets/imagens/ícone_adicionar_contato.png"
+            />
+          </div>
+
+          <div class="adicinar_contato">
+            <div class="sugestao_conteudo">
+              <img
+                class="foto_perfil_sugestao_amizade"
+                src="assets/imagens/foto_comentario_5.png"
+              />
+              <div>
+                <span class="sugestoes_amizade_amigo">Amy Winehouse</span>
+                <p class="sugestoes_amizade_amigo_profissao">
+                  Cantora e compositora
+                </p>
+              </div>
+            </div>
+            <img
+              class="botao_adicionar_contato"
+              src="assets/imagens/ícone_adicionar_contato.png"
+            />
+          </div>
+
+          <button class="botao_ver_mais">Ver mais...</button>
+        </div>
+        <div class="box5">
+          <span class="ultimas_noticias">Em alta</span>
+          <p class="ultimas_noticias_artistas">
+            Madonna rasga elogios a Kendrick Lamar e diz que gostaria de
+            colaborar com o rapper. <br /><span class="tempo_visualizacao"
+              >Há 2 horas</span
+            >
+          </p>
+
+          <p class="ultimas_noticias_artistas">
+            Katy Perry vai às lágrimas durante show em Las Vegas.<br /><span
+              class="tempo_visualizacao"
+              >Há 3 horas</span
+            >
+          </p>
+
+          <p class="ultimas_noticias_artistas">
+            Pitty pede condições melhores para artistas nacionais no Rock in
+            Rio.<br /><span class="tempo_visualizacao">Há 6 horas</span>
+          </p>
+        </div>
+        <div class="seta">
+          <img class="seta_para_cima" src="assets/imagens/seta_para_cima.png" />
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

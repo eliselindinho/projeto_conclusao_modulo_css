@@ -1,0 +1,630 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --cor-botao-pequeno: #e0e0e0;
+  --cor-fundo: white;
+  --fonte-texto-comentários: "Roboto", sans-serif;
+  --font-text-nome-perfil: "Poppins", sans-serif;
+  --border-top: 1px solid #e0e0e0;
+}
+
+body {
+  font-size: 100%;
+  background: #f0eaea;
+  gap: 4px;
+}
+
+.box1,
+.box2,
+.box3 {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.box1 {
+  flex-direction: column;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+}
+
+.box2 {
+  align-items: center;
+  width: 100%;
+  padding: 16px 12px;
+  margin-bottom: 20px;
+}
+
+.box3 {
+  width: 100%;
+  padding: 16px 12px;
+  margin-bottom: 20px;
+}
+
+.box4 {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: white;
+  padding-bottom: 16px;
+  margin-bottom: 25px;
+}
+.box5 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.cabecalho {
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-content: center;
+}
+.pesquisa {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.logo_escrita {
+  display: block;
+  height: 35px;
+}
+
+.logo_figura {
+  display: none;
+}
+
+.pesquisa_input {
+  width: 236px;
+  height: 48px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  color: #c7c7c7;
+}
+.pesquisa_botao {
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #949494;
+  border-radius: 4px;
+  border: none;
+}
+
+.icones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.botao_icones {
+  width: 48px;
+  height: 48px;
+  background-color: var(--cor-botao-pequeno);
+  border-radius: 4px;
+  border: none;
+}
+
+.icone_mensagem,
+.icone_configuracao {
+  margin-top: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--cor-botao-pequeno);
+  border-radius: 4px;
+}
+.icone_notificacao {
+  width: 20px;
+  height: 20px;
+  background-color: var(--cor-botao-pequeno);
+  border-radius: 4px;
+}
+.atencao_notificacao {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 70%;
+}
+
+.foto_perfil_pequena {
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--cor-botao-pequeno);
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #949494;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  border-top: 0.4px solid var(--cor-botao-pequeno);
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.conteudo_principal {
+  align-items: center;
+  justify-content: space-around;
+  width: 397px;
+  height: 775px;
+  border: 1px solid var(--cor-botao-pequeno);
+  border-radius: 4px;
+  background-color: white;
+  margin-top: 12px;
+}
+
+.imagem_conteudo_principal {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card_perfil {
+  background-color: white;
+}
+.conteudo_principal_nome_perfil {
+  text-align: center;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.conteudo_principal_profissao {
+  text-align: center;
+  padding-top: 2px;
+  color: #2e2e2e;
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 5px;
+}
+
+.conteudo_principal_subtitulo {
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+  color: #949494;
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 41px;
+}
+
+.conteudo_principal_quantidade_seguidores_post {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.quantidade_seguidores,
+.quantidade_posts {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 34px;
+  color: #2e2e2e;
+  text-align: center;
+  background: #f9f9f9;
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.seguidores,
+.posts {
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #949494;
+}
+
+.lista_de_acesso {
+  list-style: none;
+  margin: 0 auto;
+  border-top: var(--border-top);
+  width: 95%;
+}
+
+.lista_de_icones {
+  align-items: center;
+  margin-right: 20px;
+}
+
+.feeds {
+  width: 316px;
+  cursor: pointer;
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-right: 40px;
+  padding: 10px 10px;
+}
+.ativo {
+  background-color: #e0e0e0;
+}
+
+.scroll {
+  overflow-x: scroll;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 152px;
+  background: #ffffff;
+  border: 1px dashed #e0e0e0;
+  border-radius: 4px;
+}
+.galeria_story {
+  display: flex;
+  justify-content: space-between;
+  width: 120%;
+}
+
+.card_botao {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #949494;
+}
+.texto_botao {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.textarea_comentario {
+  border-top: var(--border-top);
+  padding-top: 30px;
+}
+
+.textarea_img {
+  width: 48px;
+  height: 48px;
+  color: #c7c7c7;
+  margin-right: 12px;
+}
+.textarea_postagem {
+  display: flex;
+  margin-bottom: 6px;
+  text-align: left;
+}
+.textarea {
+  width: 100%;
+  height: 96px;
+  font-family: var(--fonte-texto-comentários);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #c7c7c7;
+}
+
+.textarea2 {
+  width: 85%;
+  height: 48px;
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #c7c7c7;
+}
+
+.botoes_postagem {
+  display: flex;
+  gap: 12px;
+}
+
+.box_incluir {
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #949494;
+  margin-left: 71px;
+}
+.botao_box_postagem {
+  width: 65px;
+  height: 27px;
+  background: #949494;
+  color: #f9f9f9;
+  border-radius: 10px solid #949494;
+  border-radius: 4px;
+  border: none;
+}
+
+.botao_postar {
+  text-align: center;
+  width: 103px;
+  height: 47px;
+  border: none;
+  background: #474747;
+  border-radius: 5px;
+  color: #f9f9f9;
+  margin-left: 78%;
+  margin-right: 22%;
+}
+
+.perfil_site {
+  display: flex;
+  gap: 10px;
+}
+
+.foto_comentario {
+  align-items: flex-start;
+  width: 48px;
+  height: 48px;
+}
+.nome_perfil {
+  font-family: var(--font-text-nome-perfil);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  color: #000000;
+  line-height: 12px;
+}
+.tempo_visualizacao {
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #949494;
+}
+
+.profissao_perfil {
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #949494;
+}
+.mensagem {
+  display: flex;
+}
+.mensagem_perfil {
+  text-align: justify;
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2e2e2e;
+  margin-bottom: 8px;
+  margin-right: 11px;
+  margin-top: 5px;
+}
+.foto_estatua {
+  width: 100%;
+  height: 230px;
+}
+.botao {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  padding-bottom: 10px;
+}
+
+.botao_box {
+  width: 62px;
+  height: 27px;
+  background: #949494;
+  border-radius: 4px;
+  border: none;
+  color: #f9f9f9;
+  gap: 10px;
+}
+
+.botao_box_compartilhar {
+  width: 115px;
+  height: 27px;
+  background: #949494;
+  color: #f9f9f9;
+  border-radius: 10px solid #949494;
+  border-radius: 4px;
+  border: none;
+  gap: 10px;
+}
+.comentario {
+  height: 19px;
+  margin: auto;
+  margin-right: 12px;
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background: white;
+  border-radius: 10px;
+  color: #949494;
+}
+.saiba_mais {
+  color: blue;
+  text-decoration: underline;
+}
+
+.adicinar_contato {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.sugestoes_amizade {
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--font-text-nome-perfil);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.foto_perfil_sugestao_amizade {
+  justify-content: space-between;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin-left: 16px;
+  margin-right: 8px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.sugestoes_amizade_amigo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-family: var(--font-text-nome-perfil);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.sugestao_conteudo {
+  display: flex;
+}
+.sugestoes_amizade_amigo_profissao {
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-text-nome-perfil);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: #949494;
+}
+
+.botao_adicionar_contato {
+  width: 32px;
+  height: 32px;
+  background-color: #e0e0e0;
+  margin-right: 16px;
+  margin-left: 8px;
+}
+
+.botao_ver_mais {
+  display: block;
+  text-align: center;
+  width: 90%;
+  height: 48px;
+  background: #949494;
+  border-radius: 10px;
+  border: none;
+  color: #f9f9f9;
+  margin: 0 auto;
+}
+
+.ultimas_noticias {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: var(--font-text-nome-perfil);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 34px;
+  color: #2e2e2e;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.ultimas_noticias_artistas {
+  text-align: justify;
+  font-family: var(--fonte-texto-comentários);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2e2e2e;
+  margin-bottom: 8px;
+  margin-left: 16px;
+  margin-right: 11px;
+  margin-top: 5px;
+}
+
+.seta {
+  position: fixed;
+  right: 25px;
+  top: 50%;
+  text-align: center;
+  line-height: 48px;
+  width: 48px;
+  height: 48px;
+  background-color: #474747;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+.seta_para_cima {
+  width: 16px;
+  height: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  .col-5 {
+    justify-content: center;
+  }
+  .logo_escrita {
+    display: none;
+  }
+  .logo_figura {
+    display: block;
+  }
+  .col-4,
+  .col-3,
+  .seta {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .col-3 {
+    display: none;
+  }
+  .col-4,
+  .col-5 {
+    justify-content: center;
+  }
+}
