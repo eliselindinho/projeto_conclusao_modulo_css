@@ -603,8 +603,8 @@ button:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  .col-5 {
-    justify-content: center;
+  .col-4 {
+    width: 100%;
   }
   .logo_escrita {
     display: none;
@@ -612,19 +612,31 @@ button:hover {
   .logo_figura {
     display: block;
   }
-  .col-4,
-  .col-3,
   .seta {
     display: none;
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .col-3 {
-    display: none;
-  }
+@media only screen and (min-width: 960px) {
+  .col-3,
   .col-4,
   .col-5 {
-    justify-content: center;
+    width: 100%;
+  }
+  .cabecalho {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .col-4,
+  .col-5 {
+    width: 100%;
+  }
+  .cabecalho {
+    width: 100%;
+  }
+  .seta {
+    display: none;
   }
 }
