@@ -264,7 +264,6 @@ button:hover {
 }
 
 .feeds {
-  width: 316px;
   cursor: pointer;
   font-family: var(--fonte-texto-comentários);
   font-style: normal;
